@@ -1,0 +1,5 @@
+arr = input()
+car = arr.split()
+a = int(car[0])
+b = int(car[1])
+print(a*b)
