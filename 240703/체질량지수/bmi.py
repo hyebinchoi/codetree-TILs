@@ -3,6 +3,6 @@ h = int(h)
 w = int(w)
 b = (10000 * w) // (h*h)
 
-if b >= 25 : 
-    print(b)
+print(b)
+if b >= 25 :  
     print("Obesity")
