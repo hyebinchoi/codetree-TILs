@@ -7,42 +7,13 @@ b = int(b)
 d = int(d)
 f = int(f)
 
-
-
-if (a == "Y") :
-    if (b >= 37) :
-        "A"
+if (a == "Y" and b >= 37) :
+    if (c == "Y" and d >= 37) or (e == "Y" and f >= 37)  :
+        print("E")
     else :
-        "C"
-elif (a == "N"):
-    if (b >= 37) :
-        "B"
+        print("N")
 else :
-    "D"
-
-if (c == "Y") :
-    if (d >= 37) :
-        "A"
-    else :
-        "C"
-elif (c == "N"):
-    if (d >= 37) :
-        "B"
-else :
-    "D"
-
-if (e == "Y") :
-    if (f >= 37) :
-        "A"
-    else :
-        "C"
-elif (e == "N"):
-    if (f >= 37) :
-        "B"
-else :
-    "D"
-
-if count("A") >= 2 :
-    print("E")
-else :
-    print("N")
+    if (c == "Y" and d >= 37) and (e == "Y" and f >= 37) :
+        print("E")
+    else:
+        print("N")
