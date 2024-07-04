@@ -4,9 +4,9 @@ b = int(b)
 c = int(c)
 
   
-if a < b and a < c:
+if a <= b and a <= c:
     print(a)
-if b < a and b < c:
+if b <= a and b <= c:
     print(b)
-if c < b and c < a:
+if c <= b and c <= a:
     print(c)
