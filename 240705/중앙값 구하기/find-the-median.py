@@ -1,22 +1,12 @@
-a,b,c = input().split()
-
+a, b, c = input().split()
 
 a = int(a)
 b = int(b)
 c = int(c)
 
-
-if a > b and b > c :
-    print(b)
-if (a > b and c > b) and a > c :
-    print(c)
-
-if b > a and a > c :
+if (a > b and a < c) or (a > c and a < b):
     print(a)
-if (b > a and c > a) and a > b :
+elif (b > a and b < c) or (b > c and b < a):
     print(b)
-
-if c > a and a > b :
-    print(a)
-if (c > a and b > a) and b > c :
+else:
     print(c)
