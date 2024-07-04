@@ -1,14 +1,12 @@
 a,b = input().split()
 c,d = input().split()
 
-a = int(a)
+a = int(a) 
 b = int(b)
 c = int(c)
 d = int(d)
 
-if a>c :
+if a>c or (a == c) and (b > d) :
     print("A")
-elif (b == d) and (a > c) :
-    print("A")
-else :
+elif c>a or (a == c) and (d > b) :
     print("B")
